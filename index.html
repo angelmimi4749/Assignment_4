@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Assignment 4 </title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <!-- Directions (will do them all on one page instead multiple) -->
+        <header> 
+            <h1> The Different Things JavaScript Can Do </h1>
+        </header>
+        <hr>
+
+        <!-- Create an HTML page with two buttons that argue with each other.
+            When one button is clicked, the text "I'm right" should be placed
+            next to it. When the other button is clicked, the text is replaced
+            with, "No, I'm right!" 
+        -->
+        <h2>  Who is Right?  </h2>
+        <p class = "buttons">
+            <button id = "right_btn1" onclick="output()">Press me!</button>
+
+            <button id = "right_btn2" onclick="output2()">Press me!</button> 
+        </p>
+        <p id = "Text"> </p>
+        <hr>
+        <!-- Create an HTML page with a large element on the page that says 
+            "Don't hover over me" inside of it. When you hover over the element, 
+            send an alert to the user that says, "Hey, I told you not to hover 
+            over me!"" -->
+
+        <h2> Don't Do It! </h2>
+        <button class = "hover" onmouseover="onAlert()"> Don't hover over me</button>
+        <hr>
+
+        <!-- Create an HTML page with a form. It should include inputs for a username, 
+            email, and password. Also a submit button. -->
+        <h2>Form Submission</h2>
+        <button class = "click" href="form.html"> Submit your form here.</button>
+        <hr>
+
+        <!-- BONUS: Create an HTML page with a form that asks the user to input the value
+             of a sphere's radius. Write Javascript that gives them back the volume of the 
+             sphere. (There are many different ways to execute this. You can give the user 
+             information back in another input box on the page, as an alert, or any other 
+             way you can think of. You can look up how to use the Javascript Math object to 
+             simplify your calculations.) -->
+       
+        
+        <h2> Finding the Volume of a Sphere</h2>
+        
+        <label for = "radius">Enter the radius: </label>
+        <input type = "number" id = "radius" name="radius"><br>
+        <input type = "submit" id = "submit" onclick = "volumeOfSphere()" value="Submit">
+        <p id = "volume"></p>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
