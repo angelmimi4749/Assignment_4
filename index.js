@@ -22,8 +22,8 @@ function matchPass() {
       alert("Wrong Password");
    }
    else {
-      var body =  document.getElementById("body");
-      body.innerHTML = "Form Submission Completed";
+      var complete =  document.getElementById("complete");
+      complete.innerHTML = "Form Submission Completed";
    }
 }
 
